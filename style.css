@@ -1,0 +1,72 @@
+.hero-bg-color{
+
+    background-color: rgba(107, 145, 66, 0.1);
+
+}
+.btn-green{
+    background: #396C03;
+}
+
+.secondary-color {
+    background-color: #FF8B00 !important;
+}
+.text-color{
+    font-family: "merienda"!important;
+    color: #396c03 !important;
+    top: 120px;
+
+}
+.leaf-style{
+   
+    margin-top: -300px;
+}
+.font-size-65-weight-700{
+    font-size: 55px;
+    font-weight: 700;
+}
+.font-size-24{
+    font-size: 20px;
+    bottom: 130px;
+    right: 580px;
+    
+}
+.font-weight-600-size-25{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: poppins;
+    
+}
+
+
+.card-bg {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter : blur(6px);
+    border-radius: 8.86914px;
+    backdrop-filter: blur(6px);
+
+}
+.hero-bg{
+
+    height: 85vh;
+}
+input [type=text] {
+    padding: 6px 28px;
+}
+
+.bg-color{
+   background-color:rgba(255, 139, 0, 0.05) ; 
+}
+.popins-font{
+    font-family: "popins"; 
+}
+/* food-time-card */
+/* .food-time-card{
+    background-image: url("./svg/food\ time.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+} */
+.app-sec-bg{
+    background-color: rgba(255, 139, 0, .1);
+    ;
+}

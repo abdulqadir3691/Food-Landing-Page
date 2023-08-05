@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Time</title>
+    <!-- bootstrap CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- external Css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awsome link-->
+    <script src="https://kit.fontawesome.com/4a1e6be0a8.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,900;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar started -->
+    <div class="hero-bg-color border-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  d-flex justify-content-center">
+                <div class="container-fluid">
+                    <img class="img-fluid" src="./svg/Group 1.svg" alt="Logo">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse"
+                            id="navbarSupportedContent">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div>
+
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-green rounded-pill mx-2 px-4 text-white">
+                                Login</button>
+                            <div class="rounded-circle primary">
+                                <button class="btn  rounded-circle" type="submit">
+                                    <button type="button"
+                                        class="btn btn-primary position-relative rounded-circle border-success btn-green">
+                                        <i class="fa fa-sharp fa-solid fa-cart-shopping"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill secondary-color">
+                                            8
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <!-- nav bar end -->
+
+    <!-- hero section started -->
+    <!-- <div class="hero-bg-color">
+        <div class="container">
+            <div class="row d-flex align-items-center hero-bg">
+                <div class="container d-flex">
+                    <div class="col-md-6">
+                        <h1 class="text-color font-size-65">
+                            Order food online <br />
+                            your favourite local restaurants.
+                        </h1>
+                        <span class="font-size-24">Freshly made food delivered to your door.</span>
+
+                        <div class="container mt-1">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="input-group mb-3 position-relative">
+
+                                        <input type="text" class="form-control rounded-4"
+                                            placeholder="Enter your location" aria-label="Recipent username"
+                                            aria-roledescribedby="button-addon2">
+                                        <div class="input-group-append position-absolute end-0">
+                                            <button class="btn btn-green text-white rounded-4" type="button"
+                                                id="button-addon2">Search
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class=" position-relative col-md-6">
+                        <img class="img-fluid" src="./svg/image 1.svg" alt="hero-image" />
+
+                        <div class="card-bg position-absolute top-0 start-50 py-2 p-2 rounded-4">
+                            <p>
+                                <img class="card-bg" src="./svg/Vector (1).svg" alt="tick-vector" width="26px" />
+                                <span class="fs-4 fw-bold">200k+</span>
+                            </p>
+                            <span>People Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="hero-bg-color">       
+        <div class="container d-flex">           
+            <div class="row container align-items-center">               
+                <div class="col-md-6">
+                    <h1>Order food online from your favourite local restaurants.</h1>
+                    <span>Freshly made food delivered to your door.</span>
+                
+                    <div class="container mt-1">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="input-group mb-3 position-relative">
+
+                                    <input type="text" class="form-control rounded-4" placeholder="Enter your location"
+                                        aria-label="Recipent username" aria-roledescribedby="button-addon2">
+                                    <div class="input-group-append position-absolute end-0">
+                                        <button class="btn btn-green text-white rounded-4" type="button"
+                                            id="button-addon2">Search
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative pt-5">
+                    <img class="img-fluid position-relative" src="./svg/image 1.svg" alt="">
+                    <div class="card-bg position-absolute top-0 start-50 py-2 px-4 pe-4 mt-3 rounded-4">
+                        <p>
+                            <img class="card-bg" src="./svg/Vector (1).svg" alt="tick-vector" width="26px" />
+                            <span class="fs-4 fw-bold">200k+</span>
+                        </p>
+                        <span>People Delivered</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- <div class="bg-color">
+        <div class="container d-flex row border pb-5">
+
+            <div class="col-md-6">
+                <img width="150px" class="position-absolute img-fluid" src="./svg/leaf-left.png" alt="">
+                <div class="pt-5 mt-4" style="margin-left: 100px;">
+                    <h1 class="text-color mt-4 fw-bold">Order food online from your favourite local restaurants.</h1>
+                    <span class="font-size-24 fs-4">Freshly made food delivered to your door.</span>
+                    <div class="container mt-1">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="input-group mb-3 position-relative">
+
+                                    <input type="text" class="form-control rounded-4" placeholder="Enter your location"
+                                        aria-label="Recipent username" aria-roledescribedby="button-addon2">
+                                    <div class="input-group-append position-absolute end-0">
+                                        <button class="btn btn-green text-white rounded-4" type="button"
+                                            id="button-addon2">Search
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 px-4 position-relative pt-5">
+                <img width="400px" class="img-fluid position-absolute" style="margin-left: 150px; margin-top: -50px;" src="./svg/image 1.svg"
+                    alt="">
+                <div class="card-bg position-absolute top-10 start-50 px-4 p-2 ms-5 rounded-4" style="margin-top: -40px;">
+                    <p>
+                        <img class="card-bg" src="./svg/Vector (1).svg" alt="tick-vector" width="26px" />
+                        <span class="fs-4 fw-bold">200k+</span>
+                    </p>
+                    <span>People Delivered</span>
+                </div>
+            </div>
+            <div>
+                <img width="250px" class="py-5 leaf-style position-absolute top-50 end-0 img-fluid" style="margin-right: 100px;" src="./svg/leaf-right.png"
+                    alt="">
+            </div>
+        </div>
+
+
+    </div> -->
+    <div class="hero-bg-color position-relative">
+
+        <img width="150px" class="position-absolute img-fluid" src="./svg/leaf-left.png" alt="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6  pt-5">
+
+                    <h1 class="col text-color font-size-65-weight-700 align-items-center pt-5">
+                        Order food online <br />
+                        your favourite <br> local restaurants.
+                    </h1>
+                    <span class="font-weight-600-size-25 pt-3">Freshly made food delivered to your door.</span>
+                    <div class="container mt-1">
+                        <div class="row">
+                            <div class="col-8 pt-5">
+                                <div class="input-group mb-3 position-relative">
+
+                                    <input type="text" class="form-control rounded-4 ps-4"
+                                        placeholder="Enter your location" aria-label="Recipent username"
+                                        aria-roledescribedby="button-addon2">
+                                    <img width="20px"
+                                        class="secondary-color position-absolute top-50 start-0 translate-middle-y rounded-4 img-fluid justify-content-center"
+                                        src="./svg/location-logo.svg" alt="">
+                                    <div class="input-group-append position-absolute end-0">
+                                        <button class="btn btn-green text-white rounded-4" type="button"
+                                            id="button-addon2">Search
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative align-items-center pt-5">
+                    <img class="img-fluid" src="./svg/image 1.svg" alt="hero-image" />
+                    <div class="card-bg position-absolute top-0 start-50 py-2 p-2 rounded-4 mt-4"
+                        style="margin-left: -50px;">
+                        <p>
+                            <img class="card-bg" src="./svg/Vector (1).svg" alt="tick-vector" width="26px" />
+                            <span class="fs-4 fw-bold">200k+</span>
+                        </p>
+                        <span>People Delivered</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div>
+            <img width="250px" class="py-5 leaf-style position-absolute top-50 end-0 img-fluid"
+                style="margin-right: 20px;" src="./svg/leaf-right.png" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- hero section end -->
+
+
+    <!-- favourite city card -->
+    <div class="bg-color ">
+        <div class="container ">
+            <div class="row py-5 d-flex align-items-center">
+                <div class="col-md-6 ">
+                    <h1 class="text-color">Explore your <br> favourite citys food.</h1>
+                    <p class="popins-font">Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh tristique.
+                        Non
+                        ligula tristique ut
+                        ut libero sit convallis maecenas. At egestas auctor porta mattis.</p>
+                    <div>
+                        <button type="button" class="btn btn-green px-4 text-white rounded-4 popins-font">Explore
+                            <span><img src="./svg/vector-arrow.svg" alt="arrow"></span></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid p-1" width="550px" src="./svg/Group_2-removebg-preview.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- favourite city card end-->
+    <!-- feature card start -->
+    <div class="container">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col hero-bg-color p-4 rounded-4">
+                <div class="">
+                    <img src="./svg/Frame.png" alt="frame">
+                </div>
+                <h3 class="fs-2 mt-2">Wide selection of restaurants</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                    sentence
+                    and probably just keep going until we run out of words.</p>
+
+            </div>
+            <div class="feature col p-4">
+                <div class="">
+                    <img src="./svg/Frame (1).png" alt="feature-image-icon">
+                </div>
+                <h3 class="fs-2 mt-2">Easy ordering <br> process</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                    sentence
+                    and probably just keep going until we run out of words.</p>
+
+            </div>
+            <div class="feature col p-4">
+                <div class="">
+                    <img src="./svg/Frame (2).png" alt="icon">
+                </div>
+                <h3 class="fs-2 mt-2">Fast delivery within 20 min</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                    sentence
+                    and probably just keep going until we run out of words.</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- feature card end -->
+    <!-- food time card -->
+    <div class="container">
+        <img class="img-fluid" src="./svg/background-image.svg" alt="">
+
+        <div class=" container food-time-card mb-5 position-relative">
+            <div
+                class="d-flex flex-column position-absolute bottom-0 start-50 translate-middle-x align-items-center pb-4">
+                <h1 class="text-white text-center">Want to be a part of Foodtime?</h1>
+                <span class="text-white pb-3">List your restaurant or shop on foodtime.</span>
+                <button type="button" class="btn secondary-color text-white w-25 rounded-5">Get Started <span><img
+                            src="./svg/vector-arrow.svg" alt="arrow"></span></button>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- food time card end -->
+    <!-- FAQ sec start-->
+    <div class="text-center">
+
+        <h1>Frequently asked questions</h1>
+
+        <div>
+            <button type="button" class="btn btn-green text-white px-4 rounded-5">General </button>
+            <button type="button" class="btn text-color border border-success px-4 rounded-5">For Business </button>
+        </div>
+    </div>
+    <!-- FAQ sec end-->
+    <!-- Accordian sec start -->
+
+    <div class=" ">
+        <div class="container ">
+            <div class="row py-5 d-flex align-items-center">
+                <div class="col-md-6 ">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    What de I need to apply for the account?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing
+                                    and
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    How the subscription process works?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    What de I need to apply for the account?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    What de I need to apply for the account?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    What de I need to apply for the account?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Is foodtime available 24 hours?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It's also worth noting that just about any HTML can go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordian Sec end -->
+    <!-- app link sec started -->
+    <div class="app-sec-bg">
+        <div class="container ">
+            <div class="row py-5 d-flex align-items-center">
+                <div class="col-md-6 ">
+                    <h1>Put us in your pocket</h1>
+                    <p>Download our app from google play or app <br> store and you don’t have to be worry about <br>
+                        your food
+                        anymore. </p>
+                    <div class="">
+                        <div class="container ">
+                            <div class="row py-5 d-flex align-items-center g-5">
+                                <div class="col-md-3 ">
+                                    <img class="img-fluid" src="./svg/App Store Black.png" alt="app-store-icon">
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="img-fluid" src="./svg/Google Play Black.png"
+                                        alt="google-play-store-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img width="500px" class="img-fluid" src="./svg/sushibar-mockup copy 1.svg" alt="food-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- app link sec end -->
+    <!-- footer sec -->
+    <div class="btn-green ">
+        <div class="container ">
+            <div class="row py-5 d-flex text-white align-items-center">
+                <div class="col-md-6 ">
+                    <img src="./svg/logo-white.svg" alt="food-time-logo">
+                    <p>Lorem ipsum dolor sit amet consectetur. Odio amet <br> natoque tortor convallis. Bibendum
+                        sapien
+                        <br>
+                        suspendisse ipsum urna malesuada elit. Bibendum <br> vitae nibh scelerisque sed aliquam
+                        ullamcorper
+                        est.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick links</h5>
+                    <p>Browse Foodtime</p>
+                    <p>Browse Food time</p>
+                    <p>Registrations</p>
+
+                </div>
+                <div class="col-md-2">
+                    <h5>About</h5>
+                    <p>About us</p>
+                    <p>Minssion</p>
+                    <p>Contact</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Social</h5>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Instagram</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-white pb-4">© 2023 Nayeemur R Sakib</p>
+    </div>
+
+</body>
+
+</html>
